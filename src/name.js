@@ -18,12 +18,12 @@ const Random = Mock.Random
 export default function() {
   const doc = sketch.getSelectedDocument();
   const layers = doc.selectedLayers.layers;
-  console.log(layers, 111);
+  console.log(layers, layers.length, 111);
   layers.forEach(layer => {
     const randName = Random.cname();
-    if(layer.type === "ShapePath"){ // 图形
-      layer.style.fills[0].color = Random.hex();  // 随机修改选中图层颜色
-    }
+    // if(layer.type === "ShapePath"){ // 图形
+    //   layer.style.fills[0].color = Random.hex();  // 随机修改选中图层颜色
+    // }
     // layer.text = (Math.round(Math.random()*100)).toString(); // 将选中图层文本修改为随机数
     layer.text = randName; // 将选中图层文本修改为随机姓名
   });

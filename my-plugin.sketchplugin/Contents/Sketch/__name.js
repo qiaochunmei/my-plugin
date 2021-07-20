@@ -8671,13 +8671,14 @@ var Random = mockjs__WEBPACK_IMPORTED_MODULE_1___default.a.Random; // export def
 /* harmony default export */ __webpack_exports__["default"] = (function () {
   var doc = sketch__WEBPACK_IMPORTED_MODULE_0___default.a.getSelectedDocument();
   var layers = doc.selectedLayers.layers;
-  console.log(layers, 111);
-  layers.forEach(function (textLayer) {
-    var randName = Random.cname(); // textLayer.text = (Math.round(Math.random()*100)).toString(); // 将选中图层文本修改为随机数
+  console.log(layers, layers.length, 111);
+  layers.forEach(function (layer) {
+    var randName = Random.cname(); // if(layer.type === "ShapePath"){ // 图形
+    //   layer.style.fills[0].color = Random.hex();  // 随机修改选中图层颜色
+    // }
+    // layer.text = (Math.round(Math.random()*100)).toString(); // 将选中图层文本修改为随机数
 
-    textLayer.text = randName; // 将选中图层文本修改为随机姓名
-
-    textLayer.style.fills[0].color = Random.hex(); // 随机修改选中图层颜色
+    layer.text = randName; // 将选中图层文本修改为随机姓名
   });
 });
 
