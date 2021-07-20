@@ -5,7 +5,7 @@
     {
       "name": "my-command",
       "identifier": "sketch-plugin-study.my-command-identifier",
-      "script": "./my-command.js"
+      "script": "__my-command.js"
     }
   ],
   "menu": {
@@ -13,5 +13,13 @@
     "items": [
       "sketch-plugin-study.my-command-identifier"
     ]
-  }
+  },
+  "version": "0.1.0",
+  "description": "",
+  "name": "sketch-plugin-study",
+  "identifier": "sketch-plugin-study",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml",
+  "author": "qiaochunmei",
+  "authorEmail": "qiaochunmei@qianxin.com"
 }

@@ -1,10 +1,10 @@
-# my-plugin
+# sketch-plugin-study
 
 ## Installation
 
-- [Download](../../releases/latest/download/my-plugin.sketchplugin.zip) the latest release of the plugin
+- [Download](../../releases/latest/download/sketch-plugin-study.sketchplugin.zip) the latest release of the plugin
 - Un-zip
-- Double-click on my-plugin.sketchplugin
+- Double-click on sketch-plugin-study.sketchplugin
 
 ## Development Guide
 
@@ -90,15 +90,3 @@ You will need to specify a `repository` in the `package.json`:
 +  }
 ...
 ```
-
-## Mockjs
-生成随机数据，拦截 Ajax 请求
-参考网址：
-https://github.com/nuysoft/Mock/wiki/Getting-Started
-
-## 打包构建
-yarn build
-
-## 开发调试
-yarn watch
-yarn start
