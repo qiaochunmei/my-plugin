@@ -8,7 +8,7 @@
     {
       "name": "Name",
       "identifier": "my-plugin.my-command-identifier",
-      "script": "./name.js"
+      "script": "__name.js"
     }
   ],
   "menu": {
@@ -16,5 +16,9 @@
     "items": [
       "my-plugin.my-command-identifier"
     ]
-  }
+  },
+  "version": "0.1.0",
+  "identifier": "my-plugin",
+  "disableCocoaScriptPreprocessor": true,
+  "appcast": "https://raw.githubusercontent.com//master/.appcast.xml"
 }
