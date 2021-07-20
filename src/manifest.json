@@ -1,0 +1,20 @@
+{
+  "name": "Mock",
+  "description": "Mock some content",
+  "author": "QCM",
+  "$schema": "https://raw.githubusercontent.com/sketch-hq/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Name",
+      "identifier": "my-plugin.my-command-identifier",
+      "script": "./name.js"
+    }
+  ],
+  "menu": {
+    "title": "Mock",
+    "items": [
+      "my-plugin.my-command-identifier"
+    ]
+  }
+}
